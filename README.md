@@ -2,7 +2,7 @@
 
 A lightweight, static information site for Frog. It includes:
 
-- Home and animated CSS rarity showcase
+- Home and animated rarity showcase using the supplied R, SR, SSR, and MR icons
 - Feature overview
 - Searchable command reference
 - Player guides
@@ -26,3 +26,5 @@ Useful page links:
 ## Customize
 
 Colors and layout live in `assets/styles.css`. Shared animation and command search behavior live in `assets/script.js`. No framework, account connection, database, or build command is required.
+
+The browser-tab and header logo use `assets/frogstamp.png`. Rarity artwork uses the four `assets/rarity-*.png` files; replacing those files while keeping their filenames preserves the website animations.
