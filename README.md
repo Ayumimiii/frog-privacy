@@ -1,13 +1,28 @@
-# Frog Privacy Page
+# Frog Information Website
 
-This is a self-contained static page. Open `index.html` in a browser to preview
-it locally, or upload the folder to GitHub and enable GitHub Pages.
+A lightweight, static information site for Frog. It includes:
 
-Before publishing:
+- Home and animated CSS rarity showcase
+- Feature overview
+- Searchable command reference
+- Player guides
+- Privacy notice
+- Rules and terms
 
-1. Replace the placeholder support link near the bottom of `index.html`.
-2. Confirm the effective and last-updated dates in the footer.
-3. Confirm every statement still matches Frog's actual behavior.
-4. Add the published URL to Frog's Discord Developer Portal privacy-policy field.
+## Publish with GitHub Pages
 
-No framework, build command, external font, or image asset is required.
+Upload **the contents of this folder** to the root of the `frog-privacy` repository. The repository root should contain `index.html`, the `assets` folder, and each page folder.
+
+In GitHub, open **Settings → Pages**, choose **Deploy from a branch**, then select the `main` branch and `/ (root)` folder. The site will be available at:
+
+`https://ayumimiii.github.io/frog-privacy/`
+
+Useful page links:
+
+- Privacy: `https://ayumimiii.github.io/frog-privacy/privacy/`
+- Terms: `https://ayumimiii.github.io/frog-privacy/terms/`
+- Guides: `https://ayumimiii.github.io/frog-privacy/guides/`
+
+## Customize
+
+Colors and layout live in `assets/styles.css`. Shared animation and command search behavior live in `assets/script.js`. No framework, account connection, database, or build command is required.

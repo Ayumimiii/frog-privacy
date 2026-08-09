@@ -1,0 +1,3 @@
+document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver((entries,observer)=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12}).observe(el));
+const search=document.querySelector('[data-command-search]');
+if(search){const rows=[...document.querySelectorAll('[data-command]')],empty=document.querySelector('.empty');search.addEventListener('input',()=>{const q=search.value.toLowerCase().trim();let shown=0;rows.forEach(row=>{const match=row.textContent.toLowerCase().includes(q);row.hidden=!match;if(match)shown++});empty.style.display=shown?'none':'block'});}
