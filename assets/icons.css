@@ -1,9 +1,63 @@
-.brand { display:inline-flex; align-items:center; gap:9px; }
-.brand-logo { width:34px; height:34px; object-fit:contain; filter:drop-shadow(0 3px 8px #0008); }
-.rarity-icon { position:absolute; inset:14px; width:calc(100% - 28px); height:calc(100% - 28px); object-fit:contain; z-index:0; filter:drop-shadow(0 12px 24px #0007); transition:transform .35s ease; }
-.rarity:hover .rarity-icon { transform:scale(1.045); }
-.rarity:before { z-index:1; pointer-events:none; }
-.rarity:after { z-index:2; pointer-events:none; }
-.r,.sr,.ssr,.mr { background:#0c1710; }
-.mr { color:var(--ink); }
-.rarity-label { position:absolute; left:20px; bottom:16px; z-index:2; padding:5px 10px; border:1px solid #ffffff30; border-radius:999px; background:#07130dcc; color:#fff; font-size:.8rem; font-weight:900; letter-spacing:.18em; }
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.brand-logo {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 8px #0008);
+}
+
+.rarity-icon {
+    position: absolute;
+    inset: 14px;
+    width: calc(100% - 28px);
+    height: calc(100% - 28px);
+    object-fit: contain;
+    z-index: 0;
+    filter: drop-shadow(0 12px 24px #0007);
+    transition: transform .35s ease;
+}
+
+.rarity:hover .rarity-icon {
+    transform: scale(1.045);
+}
+
+.rarity:before {
+    z-index: 1;
+    pointer-events: none;
+}
+
+.rarity:after {
+    z-index: 2;
+    pointer-events: none;
+}
+
+.r,
+.sr,
+.ssr,
+.mr {
+    background: #0c1710;
+}
+
+.mr {
+    color: var(--ink);
+}
+
+.rarity-label {
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+    z-index: 2;
+    padding: 5px 10px;
+    border: 1px solid #ffffff30;
+    border-radius: 999px;
+    background: #07130dcc;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: .18em;
+}
